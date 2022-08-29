@@ -1,0 +1,7 @@
+{
+	"dependencies": {
+		"@bazel/worker": "^5.5.3",
+		"postcss": "^8.4.16",
+		"postcss-modules": "^5.0.0"
+	}
+}

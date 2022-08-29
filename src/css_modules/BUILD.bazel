@@ -1,0 +1,13 @@
+load("@aspect_rules_js//js:defs.bzl", "js_binary")
+
+js_binary(
+    name = "worker",
+    args = ["--bazel_patch_module_resolver"],
+    data = [
+        "//:node_modules/@bazel/worker",
+        "//:node_modules/postcss",
+        "//:node_modules/postcss-modules",
+    ],
+    entry_point = "worker.js",
+    visibility = ["//visibility:public"],
+)

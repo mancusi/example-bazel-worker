@@ -1,0 +1,6 @@
+load("//src/css_modules:defs.bzl", "css_module")
+
+css_module(
+    name = "styles",
+    src = "styles.css",
+)
